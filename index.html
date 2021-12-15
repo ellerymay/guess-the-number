@@ -22,17 +22,20 @@
         //create a counter 
         //the counter tacks of the iterations that the loops go thru 
         while(gotIt == false){
+            counter++;
             if(num == guess){
+                
                 gotIt = true;
                 alert("Congratulations! You guessed the correct number, which was "+ num + " and it took you " + counter + " guesses!");
                 
             }else if(num > guess){
                 counter++;
-                guess = prompt("Higher! Please try again");
+                guess = prompt("Higher! Please guess again");
             }else if(num < guess){
                 counter++;
-                guess = prompt("Lower, Please try again");
+                guess = prompt("Lower, Please guess again");
             }
+
         }
         //alert("is this working?");
     </script>
